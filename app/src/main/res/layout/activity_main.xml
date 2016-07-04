@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dexter.com.wifistrength.MainActivity"
+    android:background="@android:color/black"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/legendLayout"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wifi Connections"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/grey"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/white"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview">
+    </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <com.jjoe64.graphview.GraphView
+        android:layout_toRightOf="@+id/legendLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/graph"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>
